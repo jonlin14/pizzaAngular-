@@ -1,8 +1,6 @@
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    You selected {{ name }}
-  </body>
-</html>
+<ul>
+  <li ng-repeat='item in pizzaChoices.pizza.dough'>
+    {{ item }} <input type='checkbox' ng-model="item.checked">
+
+  </li>
+</ul>
