@@ -1,0 +1,6 @@
+<h1>What type of pizza would you like?</h1>
+<ul>
+  <li ng-repeat="item in dough">
+    <a ui-sref="toppings({ name: item.name })">{{ item.name }}</a> <button ng-click='item.cheese = true'>Yes!</button>
+  </li>
+</ul>
