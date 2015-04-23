@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE HTML>
+<html ng-app="myApp">
   <head>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="lib/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="lib/angular-ui-router.js"></script>
     <title></title>
 
   </head>
@@ -21,17 +24,17 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#/login">Log in</a>
+
           </li>
           <li>
-            <a href="" ng-click="logout()">Log out</a>
+
           </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
 
-  <div ng-view class="container"></div>
+  <div ui-view class="container"></div>
 
 
   </body>
